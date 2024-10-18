@@ -1,0 +1,262 @@
+/* letra */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+/* cuerpo */
+body{
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* contenedor principal */
+.contenedor{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(53, 56, 58);
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 100px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    
+    
+}
+.textopequeño{
+    font-size: 10px;
+}
+/* contenedor de formulario */
+.contenedorFormulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgb(53, 56, 58);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+.contenedorFormulario .contenedorInput {
+    position: relative;
+}
+.mensajeCorrecto{
+    color: aqua;
+}
+.contenedorInput label{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+.contenedorFormulario .contenedorInput textarea {
+    background: transparent;
+    color: #fff;
+    min-width: 100%;
+    max-height: 50px;
+}
+.contenedorFormulario .contenedorInput input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.658);
+    margin-bottom: 8px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.658);
+    outline: none;
+}
+
+
+.trans{
+    background: transparent;
+}
+.contenedorInput select{
+    background: transparent;
+    min-width: 99%;
+    min-height: 40px;
+    color: #fff;
+}
+.contenedorInput select:focus{
+    background-color: rgb(0,140,255);
+}
+select option {
+    font-size: 16px; 
+    padding: 10px; 
+}
+
+select:focus option {
+    font-size: 20px; 
+    padding: 15px; 
+}
+.contenedorFormulario .contenedorInput input:focus ~ label,
+.contenedorFormulario .contenedorInputinput:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 12px;
+}
+
+h1{
+    color: rgb(0,140,255);
+}
+/* tabla dentro del contenedor principal */
+table{
+    flex: 1;
+    width: 97%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgb(48, 48, 48);
+    border-collapse:collapse ;
+}
+table thead{
+    background-color: rgb(0,140,255);
+    color: rgb(0, 0, 0);
+}
+th{
+    padding: 10px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+td{
+    padding: 5px;
+}
+table img{
+    max-width: 40px;
+}
+table tbody{
+    background-color: rgba(126, 126, 126, 0.418);
+    color: rgb(255, 255, 255);
+}
+table tbody tr:nth-child(even){
+    background-color: rgb(172, 172, 172,0.4);
+}
+table tbody tr:hover{
+    background-color:rgb(0,140,255 );
+    transform: scale(1.1);
+    transition: transform 0.6s ease;
+    box-shadow: 0 0 10px rgba(0,140,255, 0.9); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+/* contenedor de formulario*/
+
+/* contenedor de botones*/
+.contenedorBoton{
+    padding: 10px;
+}
+/* boton general */
+.boton {
+    padding: 5px 10px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    text-decoration: none;
+}
+
+.botonAzul {
+    background: rgb(0,140,255);
+    box-shadow: 0 0 10px rgb(0,140,255);
+}
+.botonRojo {
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+.botonVerde {
+    color: rgb(0, 0, 0);
+    background: rgb(0, 255, 13);
+    box-shadow: 0 0 10px rgb(0, 255, 13);
+}
+.botonAmarillo {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 251, 0);
+    box-shadow: 0 0 10px rgb(255, 251, 0);
+}
+
+.botonAzul:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+}
+.botonRojo:hover {
+    box-shadow: 0 0 5px rgb(255, 0, 0),
+                0 0 25px rgb(255, 0, 0),
+                0 0 50px rgb(255, 0, 0),
+                0 0 100px rgb(255, 0, 0);
+}
+.botonVerde:hover {
+    box-shadow: 0 0 5px rgb(0, 255, 13),
+                0 0 25px rgb(0, 255, 13),
+                0 0 50px rgb(0, 255, 13),
+                0 0 100px rgb(0, 255, 13);
+}
+.botonAmarillo:hover {
+    box-shadow: 0 0 5px rgb(255, 251, 0),
+                0 0 25px rgb(255, 251, 0),
+                0 0 50px rgb(255, 251, 0),
+                0 0 100px rgb(255, 251, 0);
+}
+
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #111;
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    background-color: #444;
+}
+
+.menu li:hover > ul {
+    display: block;
+}
+
+.menu ul li {
+    float: none;
+    position: relative;
+}
+
+.menu ul li a {
+    padding: 10px;
+    color: #fff;
+    width: 200px;
+    text-align: left;
+}
